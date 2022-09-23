@@ -1,0 +1,62 @@
+.fitScreen {
+    height: 100vh;
+}
+
+.intro-section {
+    background-image: url(../../assets/burger-image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    scroll-snap-align: start;
+}
+
+.title {
+    margin: 0;
+    margin-top: clamp(1rem, 1rem + 10vh, 10rem);
+    width: fit-content;
+    min-width: max-content;
+    font-size: clamp(2rem, 1rem + 9vw, 7rem);
+    text-transform: uppercase;
+    color: white;
+    border: 5px solid white;
+    padding: .2em;
+    line-height: .8em;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em 2em 2em;
+}
+
+.buttons {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: clamp(1rem, -1rem + 20vh, 12rem);
+}
+
+.button {
+    background-color: white;
+    border: none;
+    color: black;
+    mix-blend-mode: screen;
+    width: 8rem;
+    padding: .5rem 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5rem;
+}
+
+.button:active {
+    background-color: rgba(255, 255, 255, .75);
+}
+
+@media (hover: hover) {
+    .button:hover {
+        box-shadow: 0 .25rem 5px red;
+    }
+}
