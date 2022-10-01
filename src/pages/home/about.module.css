@@ -1,0 +1,78 @@
+.fitScreen {
+    position: relative;
+}
+
+.circle-container {
+    position: relative;
+    height: 50vh;
+}
+
+.circle {
+    background-image: url(../../assets/grill-meat-image.jpg);
+    width: 20em;
+    height: 20em;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -10em;
+    margin-left: -10em;
+    opacity: 0;
+}
+
+.circle::after {
+    content: "";
+    width: 14em;
+    height: 14em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -7em;
+    margin-left: -7em;
+    background-color: #1d252e;
+}
+
+.seen-circle {
+    opacity: 1;
+    animation: 1s ease-in-out 0s reveal-image both;
+}
+
+.seen-circle::after {
+    opacity: 1;
+    animation: 1s ease-in-out 0.5s reveal-image both;
+}
+
+@keyframes reveal-image {
+    0% {clip-path: circle(0%);}
+    100% {clip-path: circle(50%);}
+}
+
+@media screen and (min-width: 900px){
+    .fitScreen{
+        height: 100vh;
+    }
+
+    .circle-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }
+
+    .circle {
+        width: 37em;
+        height: 37em;
+        margin-top: -18.5em;
+        margin-left: -18.5em;
+    }
+
+    .circle::after {
+        width: 26em;
+        height: 26em;
+        margin-top: -13em;
+        margin-left: -13em;
+    }
+}
