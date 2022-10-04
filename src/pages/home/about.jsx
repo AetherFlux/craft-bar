@@ -70,6 +70,29 @@ const About = (props) => {
             </svg>
           </div>
         </div>
+        <div className={classes.content}>
+          <div className={classes.text}>
+            <h1 className={isVisible ? classes["seen-h1"] : null}>
+              Perfecting Burgers
+            </h1>
+            <h2
+              className={`${classes.subtext} ${
+                isVisible ? classes["seen-h2"] : null
+              }`}
+            >
+              Since 1973
+            </h2>
+            <p className={isVisible ? classes["seen-p"] : null}>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum
+            </p>
+          </div>
+        </div>
       </section>
     </Fragment>
   );

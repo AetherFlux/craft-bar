@@ -1,105 +1,155 @@
 .fitScreen {
-    position: relative;
+  position: relative;
 }
 
 .circle-container {
-    position: relative;
-    height: 50vh;
+  position: relative;
+  height: 50vh;
 }
 
 .circle {
-    background-image: url(../../assets/grill-meat-image.jpg);
-    width: 20em;
-    height: 20em;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center bottom;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: -10em;
-    margin-left: -10em;
-    opacity: 0;
+  background-image: url(../../assets/grill-meat-image.jpg);
+  width: 20em;
+  height: 20em;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -10em;
+  margin-left: -10em;
+  opacity: 0;
 }
 
 .circle::after {
-    content: "";
-    width: 14em;
-    height: 14em;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: -7em;
-    margin-left: -7em;
-    background-color: #1d252e;
+  content: "";
+  width: 14em;
+  height: 14em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -7em;
+  margin-left: -7em;
+  background-color: #1d252e;
 }
 
 .seen-circle {
-    opacity: 1;
-    animation: 1s ease-in-out 0s reveal-image both;
+  opacity: 1;
+  animation: 1s ease-in-out 0s reveal-image both;
 }
 
 .seen-circle::after {
-    opacity: 1;
-    animation: 1s ease-in-out 0.5s reveal-image both;
+  opacity: 1;
+  animation: 1s ease-in-out 0.5s reveal-image both;
 }
 
 @keyframes reveal-image {
-    0% {clip-path: circle(0%);}
-    100% {clip-path: circle(50%);}
+  0% {
+    clip-path: circle(0%);
+  }
+  100% {
+    clip-path: circle(50%);
+  }
 }
 
 .line-container {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    text-align: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  text-align: center;
 }
 
 .line {
-    height: 100%;
+  height: 100%;
 }
 
 .animated {
-    stroke-dasharray: var(--path-length, 0px);
+  stroke-dasharray: var(--path-length, 0px);
+  stroke-dashoffset: var(--path-length, 0px);
+}
+
+.animated.visible {
+  animation: 3s drawBurger 0.5s linear forwards;
+}
+
+@keyframes drawBurger {
+  from {
     stroke-dashoffset: var(--path-length, 0px);
   }
-  .animated.visible {
-    animation: 3s drawBurger 0.5s linear forwards;
+  to {
+    stroke-dashoffset: 0;
   }
-  @keyframes drawBurger {
-    from {
-      stroke-dashoffset: var(--path-length, 0px);
-    }
-    to {
-      stroke-dashoffset: 0;
-    }
+}
+
+.seen-h1 {
+  animation: 1s ease-out 1.5s fade-fromleft both;
+}
+
+.seen-h2 {
+  animation: 1s ease-out 2s fade-fromleft both;
+}
+
+.seen-p {
+  animation: 1s ease-out 3s fade-fromleft both;
+}
+
+@keyframes fade-fromleft {
+  0% {
+    opacity: 0;
+    transform: translate(-6em);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+.subtext {
+  font-family: "Qwitcher Grypen", cursive;
+  color: red;
+  font-size: 2.5em;
+}
+
+.content {
+  position: relative;
+  padding: 3em 0 4em 0;
+  width: calc(100% - 5em);
+  margin: 0 auto;
+  max-width: 70em;
+}
+
+@media screen and (min-width: 900px) {
+  .fitScreen {
+    height: 100vh;
   }
 
-@media screen and (min-width: 900px){
-    .fitScreen{
-        height: 100vh;
-    }
+  .circle-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
 
-    .circle-container {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-    }
+  .circle {
+    width: 37em;
+    height: 37em;
+    margin-top: -18.5em;
+    margin-left: -18.5em;
+  }
 
-    .circle {
-        width: 37em;
-        height: 37em;
-        margin-top: -18.5em;
-        margin-left: -18.5em;
-    }
+  .circle::after {
+    width: 26em;
+    height: 26em;
+    margin-top: -13em;
+    margin-left: -13em;
+  }
 
-    .circle::after {
-        width: 26em;
-        height: 26em;
-        margin-top: -13em;
-        margin-left: -13em;
-    }
+  .text {
+    width: 50%;
+    float: left;
+    padding-right: 12em;
+    padding-top: 10em;
+  }
 }
