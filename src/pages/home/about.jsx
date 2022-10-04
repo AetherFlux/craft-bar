@@ -1,5 +1,6 @@
 import { Fragment, useState, useRef, useEffect } from "react";
 import classes from "./about.module.css";
+import ContentWrapper from "../../components/wrappers/contentWrapper";
 
 const About = (props) => {
   //Handle visibility state of contents
@@ -70,7 +71,7 @@ const About = (props) => {
             </svg>
           </div>
         </div>
-        <div className={classes.content}>
+        <ContentWrapper>
           <div className={classes.text}>
             <h1 className={isVisible ? classes["seen-h1"] : null}>
               Perfecting Burgers
@@ -92,7 +93,7 @@ const About = (props) => {
               sunt in culpa qui officia deserunt mollit anim id est laborum
             </p>
           </div>
-        </div>
+        </ContentWrapper>
       </section>
     </Fragment>
   );
