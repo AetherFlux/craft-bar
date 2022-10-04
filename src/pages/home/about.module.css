@@ -1,3 +1,7 @@
+.about-section {
+    scroll-snap-align: start;
+}
+
 .fitScreen {
   position: relative;
 }

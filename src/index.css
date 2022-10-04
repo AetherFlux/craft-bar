@@ -34,3 +34,9 @@ p {
   font-family: 'Montserrat', 'sans-serif';
   font-weight: 300;
 }
+
+.scroll-container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
