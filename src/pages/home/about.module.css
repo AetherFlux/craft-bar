@@ -57,35 +57,6 @@
   }
 }
 
-.line-container {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  text-align: center;
-}
-
-.line {
-  height: 100%;
-}
-
-.animated {
-  stroke-dasharray: var(--path-length, 0px);
-  stroke-dashoffset: var(--path-length, 0px);
-}
-
-.animated.visible {
-  animation: 3s drawBurger 0.5s linear forwards;
-}
-
-@keyframes drawBurger {
-  from {
-    stroke-dashoffset: var(--path-length, 0px);
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
 .seen-h1 {
   animation: 1s ease-out 1.5s fade-fromleft both;
 }
