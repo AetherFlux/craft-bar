@@ -1,0 +1,111 @@
+.location-section {
+    position: relative;
+    height: auto;
+    scroll-snap-align: start;
+}
+
+.image-layer {
+    position: relative;
+    height: 50vh;
+}
+
+
+.image-container {
+    background-image: url(../../assets/location-image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    float: left;
+    width: 50%;
+    height: calc(100% - 2em);
+}
+
+.line-container {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+}
+
+.line {
+    height: 100%;
+}
+
+.subtext {
+    font-family: 'Qwitcher Grypen', cursive;
+    color: red;
+    font-size: 2.5em;
+}
+
+.seen-h1 {
+    animation: 1s ease-out 1.5s fade-fromright both;
+}
+
+.seen-h2 {
+    animation: 1s ease-out 2s fade-fromright both;
+}
+
+.seen-p {
+    animation: 1s ease-out 3s fade-fromright both;
+}
+
+@keyframes fade-fromright {
+    0% {
+        opacity: 0;
+        transform: translate(-6em);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes fade-fromleft {
+    0% {
+        opacity: 0;
+        transform: translate(6em);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .fitScreen {
+        height: 100vh;
+    }
+
+    .image-layer {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }
+
+    .image-container {
+        height: calc(100% - 5em);
+    }
+
+    .text {
+        width: 50%;
+        float: right;
+        padding-left: 12em;
+        padding-top: 10em;
+    }
+
+    .seen-h1 {
+        animation: 1s ease-out 1.5s fade-fromleft both;
+    }
+    
+    .seen-h2 {
+        animation: 1s ease-out 2s fade-fromleft both;
+    }
+    
+    .seen-p {
+        animation: 1s ease-out 3s fade-fromleft both;
+    }
+    
+
+}
