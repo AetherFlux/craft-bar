@@ -23,7 +23,7 @@ function App() {
   return (
     <Fragment>
       <div className="scroll-container">
-        <DrawerToggleButton drawerClickHandler = {DrawerToggleHandler}></DrawerToggleButton>
+        <DrawerToggleButton drawerClickHandler={DrawerToggleHandler} drawerOpen={drawerOpen}></DrawerToggleButton>
         <Drawer showDrawer={drawerOpen}></Drawer>
         <Intro></Intro>
         <About></About>
