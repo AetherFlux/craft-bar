@@ -1,0 +1,42 @@
+.drawer {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 98;
+    padding-bottom: 2em;
+    transform: translate(100%);
+    transition: transform 0.3s ease-out;
+    padding-top: 60px;
+}
+
+.drawer.open {
+    transform: translate(0%);
+}
+
+.flex {
+    display: flex;
+    gap: var(--gap, 2rem);
+}
+
+.navigation {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 50% 0;
+    width: 100%;
+}
+
+@media screen and (min-width: 900px) {
+    .drawer {
+        width: 33vw;
+    }
+}
+
+@media screen and (max-height: 500px) {
+    .navigation {
+        margin: 2em 0 0 0;
+    }
+}

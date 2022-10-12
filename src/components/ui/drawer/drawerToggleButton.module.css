@@ -1,0 +1,44 @@
+.button-container{
+    position: fixed;
+    top: 1.5em;
+    right: 1.5em;
+    height: 32px;
+    width: 32px;
+    z-index: 99;
+}
+
+.toggle-button {
+    display: flex;
+    flex-direction: column;
+    height: 32px;
+    width: 32px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.toggle-button:focus {
+    outline: none;
+}
+
+.line-1 {
+    width: 32px;
+    height: 3px;
+    background: white;
+}
+
+.line-2 {
+    width: 32px;
+    height: 3px;
+    background: white;
+
+}
+.line-3 {
+    width: 32px;
+    height: 3px;
+    background: white;
+}

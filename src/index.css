@@ -35,6 +35,17 @@ p {
   font-weight: 300;
 }
 
+li {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 200%;
+}
+
+ul {
+  list-style: none;
+}
+
 .scroll-container {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
