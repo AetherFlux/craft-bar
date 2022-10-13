@@ -4,6 +4,7 @@ import About from "./pages/home/about";
 import Location from "./pages/home/location";
 import DrawerToggleButton from "./components/ui/drawer/drawerToggleButton";
 import Drawer from "./components/ui/drawer/drawer";
+import Ingredients from "./pages/home/ingredients";
 
 function App() {
 
@@ -28,6 +29,7 @@ function App() {
         <Intro></Intro>
         <About></About>
         <Location></Location>
+        <Ingredients></Ingredients>
       </div>
     </Fragment>
   );
