@@ -44,7 +44,7 @@ const Location = (props) => {
         <ContentWrapper>
           <div ref={locationRef} className={classes.text}>
             <h1 className={isVisible ? classes["seen-h1"] : null}>
-              Dine in friendly soroundings
+              Dine in friendly surroundings
             </h1>
             <h2
               className={`${classes.subtext} ${
