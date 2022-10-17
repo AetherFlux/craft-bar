@@ -5,7 +5,6 @@ const Testimonials = props => {
     return (
         <Fragment>
             <section className={`${classes.fitScreen} ${classes["testimonials-section"]}`}>
-
             </section>
         </Fragment>
     )
