@@ -1,12 +1,13 @@
 .card-container {
     display: flex;
     flex-direction: column;
-    max-width: 350px;
-    min-width: 250px;
+    width: 350px;
+    height: 230px;
     background-color: #1d252e;
     border-radius: 5px;
     align-items: center;
     border-top: 5px solid red;
+    margin-top: 45px;
     box-shadow: 0 0 5px rgb(0 0 0 / 15%);
 }
 
