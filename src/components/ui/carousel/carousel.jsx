@@ -9,11 +9,11 @@ const Carousel = (props) => {
   return (
     <Swiper
       modules={[Autoplay, Mousewheel]}
-      spaceBetween={0}
+      spaceBetween={50}
       slidesPerView={1}
       breakpoints={{
-        500: {slidesPerView : 2},
-        992: {slidesPerView: 3}
+        700: {slidesPerView : 2},
+        1000: {slidesPerView: 3}
       }}
       loop={true}
       autoplay={{
@@ -23,6 +23,7 @@ const Carousel = (props) => {
       mousewheel={{
         releaseOnEdges: true
       }}
+      watchSlidesProgress={true}
       className={classes.carousel}
     >
       {React.Children.map(props.children, child => <SwiperSlide className={classes.slide}>{child}</SwiperSlide>)}
