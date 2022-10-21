@@ -6,6 +6,7 @@ import DrawerToggleButton from "./components/ui/drawer/drawerToggleButton";
 import Drawer from "./components/ui/drawer/drawer";
 import Ingredients from "./pages/home/ingredients";
 import Testimonials from "./pages/home/testimonials";
+import Footer from "./components/layout/footer";
 
 function App() {
 
@@ -32,6 +33,7 @@ function App() {
         <Location></Location>
         <Ingredients></Ingredients>
         <Testimonials></Testimonials>
+        <Footer></Footer>
       </div>
     </Fragment>
   );
