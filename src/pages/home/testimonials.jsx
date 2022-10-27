@@ -44,7 +44,7 @@ const Testimonials = (props) => {
           />
         </div>
         <h1 className={`${classes["testimonials-title"]} ${isVisible ? classes["seen-h1"] : null}`} ref={testimonialsRef}>
-          See what our costumers think
+          See what our customers think
         </h1>
         <div className={`${classes["carousel-container"]} ${isVisible ? classes["seen-carousel"] : null}`}>
           <Carousel>
