@@ -6,13 +6,13 @@ const Drawer = props => {
         <nav className={props.showDrawer ? `${classes.drawer} ${classes.open}` : classes.drawer}>
             <ul className={`${classes.navigation} ${classes.flex}`}>
                 <li>
-                    <NavLink to="/">Home</NavLink>
+                    <NavLink className={x => x.isActive ? classes["active-link"] : null} to="/" end>Home</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/menu">Menu</NavLink>
+                    <NavLink className={x => x.isActive ? classes["active-link"] : null} to="/menu">Menu</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/order">Order</NavLink>
+                    <NavLink className={x => x.isActive ? classes["active-link"] : null} to="/order">Order</NavLink>
                 </li>
             </ul>
         </nav>

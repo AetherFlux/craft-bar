@@ -29,6 +29,12 @@
     width: 100%;
 }
 
+.active-link {
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 5px;
+}
+
 @media screen and (min-width: 900px) {
     .drawer {
         width: 33vw;

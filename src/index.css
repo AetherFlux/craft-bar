@@ -17,6 +17,15 @@ code {
     monospace;
 }
 
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 80%;
+}
+
 h1 {
   margin: 0;
   color: white;
