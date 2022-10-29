@@ -30,7 +30,10 @@ function App() {
           drawerClickHandler={DrawerToggleHandler}
           drawerOpen={drawerOpen}
         ></DrawerToggleButton>
-          <Drawer showDrawer={drawerOpen}></Drawer>
+          <Drawer
+            showDrawer={drawerOpen}
+            drawerClickHandler={DrawerToggleHandler}
+            ></Drawer>
         <Routes>
           <Route
             path="/"

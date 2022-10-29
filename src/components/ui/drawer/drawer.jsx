@@ -6,13 +6,13 @@ const Drawer = props => {
         <nav className={props.showDrawer ? `${classes.drawer} ${classes.open}` : classes.drawer}>
             <ul className={`${classes.navigation} ${classes.flex}`}>
                 <li>
-                    <NavLink className={x => x.isActive ? classes["active-link"] : null} to="/" end>Home</NavLink>
+                    <NavLink className={x => x.isActive ? classes["active-link"] : null} to="/" onClick={props.drawerClickHandler} end>Home</NavLink>
                 </li>
                 <li>
-                    <NavLink className={x => x.isActive ? classes["active-link"] : null} to="/menu">Menu</NavLink>
+                    <NavLink className={x => x.isActive ? classes["active-link"] : null} to="/menu" onClick={props.drawerClickHandler}>Menu</NavLink>
                 </li>
                 <li>
-                    <NavLink className={x => x.isActive ? classes["active-link"] : null} to="/order">Order</NavLink>
+                    <NavLink className={x => x.isActive ? classes["active-link"] : null} to="/order" onClick={props.drawerClickHandler}>Order</NavLink>
                 </li>
             </ul>
         </nav>
