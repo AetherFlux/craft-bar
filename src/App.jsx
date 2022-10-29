@@ -16,6 +16,10 @@ function App() {
     setDrawerOpen(!drawerOpen);
   };
 
+  const DrawerCloseHandler = () => {
+    setDrawerOpen(false);
+  };
+
   //disable mobile scroll if drawer is open
   if (drawerOpen) {
     document.body.style.overflow = "hidden";
@@ -39,7 +43,7 @@ function App() {
             path="/"
             element={
               <Fragment>
-                <Intro></Intro>
+                <Intro drawerCloseHandler={DrawerCloseHandler}></Intro>
                 <About></About>
                 <Location></Location>
                 <Ingredients></Ingredients>
