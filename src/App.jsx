@@ -1,4 +1,5 @@
 import { Fragment, useState } from "react";
+import { Route, Routes } from "react-router-dom";
 import Intro from "./pages/home/intro";
 import About from "./pages/home/about";
 import Location from "./pages/home/location";
@@ -9,7 +10,6 @@ import Testimonials from "./pages/home/testimonials";
 import Footer from "./components/layout/footer";
 
 function App() {
-
   const [drawerOpen, setDrawerOpen] = useState(false);
 
   const DrawerToggleHandler = () => {
@@ -18,21 +18,34 @@ function App() {
 
   //disable mobile scroll if drawer is open
   if (drawerOpen) {
-    document.body.style.overflow = "hidden"
+    document.body.style.overflow = "hidden";
   } else {
-    document.body.style.overflow = "visible"
+    document.body.style.overflow = "visible";
   }
 
   return (
     <Fragment>
       <div className="scroll-container">
-        <DrawerToggleButton drawerClickHandler={DrawerToggleHandler} drawerOpen={drawerOpen}></DrawerToggleButton>
-        <Drawer showDrawer={drawerOpen}></Drawer>
-        <Intro></Intro>
-        <About></About>
-        <Location></Location>
-        <Ingredients></Ingredients>
-        <Testimonials></Testimonials>
+        <DrawerToggleButton
+          drawerClickHandler={DrawerToggleHandler}
+          drawerOpen={drawerOpen}
+        ></DrawerToggleButton>
+          <Drawer showDrawer={drawerOpen}></Drawer>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <Fragment>
+                <Intro></Intro>
+                <About></About>
+                <Location></Location>
+                <Ingredients></Ingredients>
+                <Testimonials></Testimonials>
+              </Fragment>
+            }
+          />
+          <Route path="/test" element={<Testimonials></Testimonials>}/>
+        </Routes>
         <Footer></Footer>
       </div>
     </Fragment>

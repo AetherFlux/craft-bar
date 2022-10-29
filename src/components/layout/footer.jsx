@@ -17,13 +17,13 @@ const Footer = (props) => {
           <p>(123) - 456 - 7890</p>
         </div>
         <div className={classes.socials}>
-          <a href="/">
+          <a href="https://www.facebook.com">
             <img src={facebookLogo} className={classes["icon"]} alt="" />
           </a>
-          <a href="/">
+          <a href="https://www.instagram.com">
             <img src={instagramLogo} className={classes["icon"]} alt="" />
           </a>
-          <a href="/">
+          <a href="https://www.twitter.com">
             <img src={twitterLogo} className={classes["icon"]} alt="" />
           </a>
         </div>

@@ -1,17 +1,18 @@
 import classes from "./drawer.module.css"
+import { NavLink } from "react-router-dom";
 
 const Drawer = props => {
     return (
         <nav className={props.showDrawer ? `${classes.drawer} ${classes.open}` : classes.drawer}>
             <ul className={`${classes.navigation} ${classes.flex}`}>
                 <li>
-                    <span>Home</span>
+                    <NavLink to="/">Home</NavLink>
                 </li>
                 <li>
-                    <span>Menu</span>
+                    <NavLink to="/menu">Menu</NavLink>
                 </li>
                 <li>
-                    <span>Order</span>
+                    <NavLink to="/order">Order</NavLink>
                 </li>
             </ul>
         </nav>
