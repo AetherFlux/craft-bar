@@ -8,6 +8,7 @@ import Drawer from "./components/ui/drawer/drawer";
 import Ingredients from "./pages/home/ingredients";
 import Testimonials from "./pages/home/testimonials";
 import Footer from "./components/layout/footer";
+import Order from "./pages/order/order";
 
 function App() {
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -51,7 +52,7 @@ function App() {
               </Fragment>
             }
           />
-          <Route path="/test" element={<Testimonials></Testimonials>}/>
+          <Route path="/order" element={<Order></Order>}/>
         </Routes>
         <Footer></Footer>
       </div>
