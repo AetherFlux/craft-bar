@@ -1,7 +1,62 @@
 .order-section {
-    padding: 5rem 0 5rem 0;
+    padding: 8rem 0 5rem 0;
+    scroll-snap-align: end;
+}
+
+.order-items {
     display: grid;
     grid-template-columns: repeat( auto-fit, minmax(350px,1fr));
     grid-gap: 20px 40px;
-    scroll-snap-align: end;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.sort-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 4rem 0;
+    flex-wrap: wrap;
+}
+
+.sort-buttons>button {
+    background-color: red;
+    border: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    width: 145px;
+    height: 50px;
+}
+
+.cart-container {
+    position: fixed;
+    top: 1.2rem;
+    left: 1.5rem;
+    z-index: 90;
+}
+
+@media screen and (min-width: 900px) {
+    .order-section {
+        margin: 0 3rem;
+    }
+
+    .cart-container {
+        left: 3.5rem
+    }
+
+    h1 {
+        text-align: left;
+        margin-left: 20px;
+    }
+
+    .sort-buttons {
+        justify-content: flex-start;
+        margin: 0 20px;
+    }
 }
