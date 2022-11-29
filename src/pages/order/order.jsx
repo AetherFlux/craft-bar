@@ -43,9 +43,9 @@ const Order = (props) => {
     <Fragment>
       <section className={classes["order-section"]}>
         <div className={classes["cart-container"]}>
-          <CartButton />
+          <CartButton showCartHandler={props.showCartHandler} />
         </div>
-        <h1>ORDER</h1>
+        <h1 className={classes["order-title"]}>ORDER</h1>
         <div className={classes["sort-buttons"]}>
           <button>All</button>
           <button>Burgers</button>

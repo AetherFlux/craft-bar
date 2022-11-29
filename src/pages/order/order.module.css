@@ -9,7 +9,7 @@
     grid-gap: 20px 40px;
 }
 
-h1 {
+.order-title {
     text-align: center;
     font-size: 50px;
     font-weight: 500;
@@ -34,6 +34,13 @@ h1 {
     height: 50px;
 }
 
+.sort-buttons>button:hover,
+.sort-buttons>button:active {
+  background-color: #5a1a01;
+  border-color: #5a1a01;
+  color: white;
+}
+
 .cart-container {
     position: fixed;
     top: 1.2rem;
@@ -50,7 +57,7 @@ h1 {
         left: 3.5rem
     }
 
-    h1 {
+    .order-title {
         text-align: left;
         margin-left: 20px;
     }

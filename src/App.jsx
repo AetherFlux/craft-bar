@@ -9,9 +9,11 @@ import Ingredients from "./pages/home/ingredients";
 import Testimonials from "./pages/home/testimonials";
 import Footer from "./components/layout/footer";
 import Order from "./pages/order/order";
+import Cart from "./components/ui/cart/cart";
 
 function App() {
   const [drawerOpen, setDrawerOpen] = useState(false);
+  const [cartOpen, setCartOpen] = useState(false);
 
   const DrawerToggleHandler = () => {
     setDrawerOpen(!drawerOpen);
@@ -19,6 +21,14 @@ function App() {
 
   const DrawerCloseHandler = () => {
     setDrawerOpen(false);
+  };
+
+  const showCartHandler = () => {
+    setCartOpen(true);
+  };
+
+  const hideCartHandler = () => {
+    setCartOpen(false);
   };
 
   //disable mobile scroll if drawer is open
@@ -35,10 +45,10 @@ function App() {
           drawerClickHandler={DrawerToggleHandler}
           drawerOpen={drawerOpen}
         ></DrawerToggleButton>
-          <Drawer
-            showDrawer={drawerOpen}
-            drawerClickHandler={DrawerToggleHandler}
-            ></Drawer>
+        <Drawer
+          showDrawer={drawerOpen}
+          drawerClickHandler={DrawerToggleHandler}
+        ></Drawer>
         <Routes>
           <Route
             path="/"
@@ -52,7 +62,15 @@ function App() {
               </Fragment>
             }
           />
-          <Route path="/order" element={<Order></Order>}/>
+          <Route
+            path="/order"
+            element={
+              <Fragment>
+                <Order showCartHandler={showCartHandler}></Order>
+                {cartOpen && <Cart hideCartHandler={hideCartHandler}></Cart>}
+              </Fragment>
+            }
+          />
         </Routes>
         <Footer></Footer>
       </div>
