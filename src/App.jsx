@@ -10,6 +10,7 @@ import Testimonials from "./pages/home/testimonials";
 import Footer from "./components/layout/footer";
 import Order from "./pages/order/order";
 import Cart from "./components/ui/cart/cart";
+import CartProvider from "./store/cartProvider";
 
 function App() {
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -65,10 +66,10 @@ function App() {
           <Route
             path="/order"
             element={
-              <Fragment>
+              <CartProvider>
                 <Order showCartHandler={showCartHandler}></Order>
                 {cartOpen && <Cart hideCartHandler={hideCartHandler}></Cart>}
-              </Fragment>
+              </CartProvider>
             }
           />
         </Routes>

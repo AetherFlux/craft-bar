@@ -1,10 +1,25 @@
 import { Fragment } from "react"
+import { useContext } from "react"
+
 import classes from "./orderCard.module.css"
+import CartContext from "../../store/cartContext"
 
 const OrderCard = props => {
+    const cartCtx = useContext(CartContext);
+
+    const submitHandler = (event) => {
+        event.preventDefault()
+
+        cartCtx.addItem({
+            id: props.id,
+            name: props.title,
+            price: props.price
+        });
+    }
+
     return(
         <Fragment>
-            <div className={classes["order-card"]}>
+            <form className={classes["order-card"]} onSubmit={submitHandler}>
                 <img src={props.image} alt={props.title} className={classes["order-image"]}/>
                 <div className={classes["card-details"]}>
                     <div className={classes["card-main-text"]}>
@@ -13,11 +28,11 @@ const OrderCard = props => {
                     </div>
                     <p className={classes["card-description"]}>{props.description}</p>
                     <div className={classes["card-buttons"]}>
-                        <button>More info</button>
-                        <button>Add To Cart</button>
+                        <button type="button">More info</button>
+                        <button type="submit">Add To Cart</button>
                     </div>
                 </div>
-            </div>
+            </form>
         </Fragment>
     );
 }
