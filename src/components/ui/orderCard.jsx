@@ -13,7 +13,7 @@ const OrderCard = props => {
         cartCtx.addItem({
             id: props.id,
             name: props.title,
-            price: props.price
+            price: props.price,
         });
     }
 
