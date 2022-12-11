@@ -1,6 +1,6 @@
 .order-section {
     padding: 8rem 0 5rem 0;
-    scroll-snap-align: end;
+    scroll-snap-align: start;
 }
 
 .order-items {
