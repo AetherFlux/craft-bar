@@ -14,6 +14,7 @@ const OrderCard = props => {
             id: props.id,
             name: props.title,
             price: props.price,
+            amount: 1
         });
     }
 

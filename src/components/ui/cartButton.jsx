@@ -7,8 +7,12 @@ import classes from "./cartButton.module.css"
 const CartButton = (props) => {
     const cartCtx = useContext(CartContext);
     
-    //Get number of items in cart crom cart context
-    const cartCount = cartCtx.items.length
+    //Get number of items in cart from cart context
+    const cartCount = cartCtx.items.reduce((curNumber, item) => {
+        return (
+            curNumber + item.amount
+        );
+    }, 0);
 
     return (
         <button className={classes["cart-button"]} onClick={props.showCartHandler}>
