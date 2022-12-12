@@ -5,7 +5,19 @@
     border-radius: 15px;
     margin: 0 20px;
     overflow: hidden;
+    animation: slide-down 300ms ease-out forwards;
 }
+
+@keyframes slide-down {
+    from {
+      opacity: 0;
+      transform: translateY(-3rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 
 .order-image{
     position: relative;
