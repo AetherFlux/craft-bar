@@ -11,6 +11,7 @@ import Footer from "./components/layout/footer";
 import Order from "./pages/order/order";
 import Cart from "./components/ui/cart/cart";
 import CartProvider from "./store/cartProvider";
+import Menu from "./pages/Menu/menu";
 
 function App() {
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -70,6 +71,14 @@ function App() {
                 <Order showCartHandler={showCartHandler}></Order>
                 {cartOpen && <Cart hideCartHandler={hideCartHandler}></Cart>}
               </CartProvider>
+            }
+          />
+          <Route
+            path="/menu"
+            element={
+              <Fragment>
+                <Menu></Menu>
+              </Fragment>
             }
           />
         </Routes>

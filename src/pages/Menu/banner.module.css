@@ -1,0 +1,12 @@
+.banner-section {
+    width: 100%;
+    height: 66vh;
+}
+
+.image-container {
+    height: 100%;
+    background-image: url(../../assets/burger-hands.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
