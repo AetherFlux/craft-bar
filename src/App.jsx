@@ -1,5 +1,5 @@
 import { Fragment, useState } from "react";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import Intro from "./pages/home/intro";
 import About from "./pages/home/about";
 import Location from "./pages/home/location";
@@ -16,6 +16,8 @@ import Menu from "./pages/Menu/menu";
 function App() {
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [cartOpen, setCartOpen] = useState(false);
+
+  const currPath = useLocation().pathname;
 
   const DrawerToggleHandler = () => {
     setDrawerOpen(!drawerOpen);
@@ -42,7 +44,7 @@ function App() {
 
   return (
     <Fragment>
-      <div className="scroll-container">
+      <div className={`${currPath === "/" ? "snapping" : null} scroll-container`}>
         <DrawerToggleButton
           drawerClickHandler={DrawerToggleHandler}
           drawerOpen={drawerOpen}
