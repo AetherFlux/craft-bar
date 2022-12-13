@@ -2,8 +2,14 @@
     list-style: none;
     margin: 0;
     padding: 0;
-    max-height: 20rem;
+    max-height: calc(100vh - 180px);
     overflow: auto;
+  }
+
+  @media (min-height: 600px) {
+    .cart-items{
+        max-height: 20rem
+    }
   }
 
   .cart-items>li{
