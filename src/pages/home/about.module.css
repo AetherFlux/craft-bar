@@ -94,7 +94,7 @@
   max-width: 70em;
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1000px) {
   .fitScreen {
     height: 100vh;
   }
@@ -125,6 +125,12 @@
     width: 50%;
     float: left;
     padding-right: 12em;
-    padding-top: 10em;
+    padding-top: 16vh;
+  }
+}
+
+@media screen and (orientation: landscape) and (max-height: 650px) and (max-width: 1000px) {
+  .circle-container {
+    margin-top: 10%;
   }
 }
