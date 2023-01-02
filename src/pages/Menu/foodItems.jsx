@@ -128,6 +128,7 @@ const FoodItems = (props) => {
                       (item) =>
                         item.category === "Burgers" && (
                           <MenuItems
+                            id={item.id}
                             title={item.title}
                             price={item.price}
                             description={item.description}
@@ -147,6 +148,7 @@ const FoodItems = (props) => {
                       (item) =>
                         item.category === "Sides" && (
                           <MenuItems
+                            id={item.id}
                             title={item.title}
                             price={item.price}
                             description={item.description}
@@ -167,6 +169,7 @@ const FoodItems = (props) => {
                       (item) =>
                         item.category === "Desserts" && (
                           <MenuItems
+                            id={item.id}
                             title={item.title}
                             price={item.price}
                             description={item.description}
@@ -186,6 +189,7 @@ const FoodItems = (props) => {
                       (item) =>
                         item.category === "Drinks" && (
                           <MenuItems
+                            id={item.id}
                             title={item.title}
                             price={item.price}
                             description={item.description}
@@ -206,6 +210,7 @@ const FoodItems = (props) => {
                       (item) =>
                         item.category === "Specials" && (
                           <MenuItems
+                            id={item.id}
                             title={item.title}
                             price={item.price}
                             description={item.description}
