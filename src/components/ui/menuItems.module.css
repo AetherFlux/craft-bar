@@ -1,0 +1,46 @@
+.menu-item {
+    width: 100%;
+}
+
+.menu-item-price {
+    display: flex;
+    flex-grow: 1;
+}
+
+.menu-item-price::before {
+  content: "";
+  flex-grow: 1;
+  height: 2px;
+  margin-top: 1em;
+  background: repeating-linear-gradient(
+    to right,
+    white,
+    white 2px,
+    transparent 1px,
+    transparent 8px
+  );
+}
+
+.menu-item div {
+    color: white;
+    display: flex;
+    margin-bottom: 1rem;
+    font-weight: 200;
+}
+
+.menu-item div > span {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+@media screen and (min-width: 720px) {
+    .menu-item {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1260px) {
+    .menu-item {
+        width: 45%;
+    }
+}
