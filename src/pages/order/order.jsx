@@ -11,6 +11,15 @@ const DUMMY_ITEMS = [
     category: "Burgers",
     price: 8,
     description: "The biggest burger we have",
+    info: [{
+      ingredients:"Beef, Mayo, Ketchup, Lettuce, Wheat, Tomato, Onion, Pickles.",
+      allergens: "Gluten",
+      nutrition: [{
+        carbs: 1000,
+        protein: 100,
+        fat: 50
+      }],
+    }],
     image:
       "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1899&q=80",
   },
@@ -79,10 +88,13 @@ const Order = (props) => {
             (item) =>
               (item.category === itemsShown || itemsShown === "All") && (
                 <OrderCard
+                  setFoodInfo={props.setFoodInfo}
+                  showFoodInfoHandler={props.showFoodInfoHandler}
                   key={item.id}
                   id={item.id}
                   title={item.title}
                   price={item.price}
+                  info={item.info}
                   description={item.description}
                   image={item.image}
                 />

@@ -12,6 +12,7 @@ const ReviewCard = props => {
                     <p className={classes.text}>{props.reviewText.length > 100 ? `${props.reviewText.slice(0, 100)}...` : props.reviewText}</p>
                     <h1>{props.reviewName}</h1>
                 </div>
+                
             </div>
         </Fragment>
     )

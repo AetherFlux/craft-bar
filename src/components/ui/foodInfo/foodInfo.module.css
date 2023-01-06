@@ -1,0 +1,40 @@
+.item-title {
+    color: black;
+    margin-bottom: 2rem;
+}
+
+.category-title {
+    color: black;
+    border-bottom: 2px solid red;
+}
+
+.category-text {
+    color: black;
+    font-weight: 400;
+    font-family: 'Montserrat';
+}
+
+.nutrition-section {
+    display: flex;
+    margin: 16px 0;
+}
+
+.nutrition-value {
+    display: flex;
+    flex-grow: 1;
+    font-family: 'Montserrat';
+}
+
+.nutrition-value::before {
+  content: "";
+  flex-grow: 1;
+  height: 2px;
+  margin-top: 1em;
+  background: repeating-linear-gradient(
+    to right,
+    black,
+    black 2px,
+    transparent 1px,
+    transparent 8px
+  );
+}

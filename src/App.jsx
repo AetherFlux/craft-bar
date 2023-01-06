@@ -12,10 +12,16 @@ import Order from "./pages/order/order";
 import Cart from "./components/ui/cart/cart";
 import CartProvider from "./store/cartProvider";
 import Menu from "./pages/Menu/menu";
+import FoodInfo from "./components/ui/foodInfo/foodInfo";
 
 function App() {
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [cartOpen, setCartOpen] = useState(false);
+  const [{foodTitle, foodInfo}, setFoodInfo] = useState({
+    foodTitle: "TestTitle",
+    foodInfo: ""
+  })
+  const [foodInfoOpen, setFoodInfoOpen] = useState(false);
 
   const currPath = useLocation().pathname;
 
@@ -34,6 +40,14 @@ function App() {
   const hideCartHandler = () => {
     setCartOpen(false);
   };
+
+  const showFoodInfoHandler = () => {
+    setFoodInfoOpen(true);
+  }
+
+  const hideFoodInfoHandler = () => {
+    setFoodInfoOpen(false);
+  }
 
   //disable mobile scroll if drawer is open
   if (drawerOpen) {
@@ -70,8 +84,9 @@ function App() {
             path="/order"
             element={
               <CartProvider>
-                <Order showCartHandler={showCartHandler}></Order>
+                <Order showCartHandler={showCartHandler} showFoodInfoHandler={showFoodInfoHandler} setFoodInfo={setFoodInfo}></Order>
                 {cartOpen && <Cart hideCartHandler={hideCartHandler}></Cart>}
+                {foodInfoOpen && <FoodInfo hideFoodInfoHandler={hideFoodInfoHandler} foodTitle={foodTitle} foodInfo={foodInfo}></FoodInfo>}
               </CartProvider>
             }
           />
