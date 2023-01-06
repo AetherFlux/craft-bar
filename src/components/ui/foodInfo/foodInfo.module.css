@@ -38,3 +38,28 @@
     transparent 8px
   );
 }
+
+.actions {
+    text-align: right;
+}
+
+.button:hover,
+.button:active {
+  background-color: #5a1a01;
+  border-color: #5a1a01;
+  color: white;
+}
+
+.button {
+    width: 120px;
+    height: 50px;
+    background-color: red;
+    color: white;
+    font: inherit;
+    border: none;
+    padding: 0.5rem 2rem;
+    border-radius: 5px;
+    margin-left: 1rem;
+    font-weight: 600;
+    font-family: 'Arial';
+  }
