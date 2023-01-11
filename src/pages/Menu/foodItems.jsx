@@ -33,6 +33,51 @@ const DUMMY_ITEMS = [
       "https://images.unsplash.com/photo-1553979459-d2229ba7433b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2136&q=80",
   },
   {
+    id: "b3",
+    title: "Medium Burger",
+    category: "Burgers",
+    price: 5,
+    description: "A regular burger",
+    image:
+      "https://images.unsplash.com/photo-1553979459-d2229ba7433b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2136&q=80",
+  },
+  {
+    id: "b3",
+    title: "Medium Burger",
+    category: "Burgers",
+    price: 5,
+    description: "A regular burger",
+    image:
+      "https://images.unsplash.com/photo-1553979459-d2229ba7433b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2136&q=80",
+  },
+  {
+    id: "b3",
+    title: "Medium Burger",
+    category: "Burgers",
+    price: 5,
+    description: "A regular burger",
+    image:
+      "https://images.unsplash.com/photo-1553979459-d2229ba7433b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2136&q=80",
+  },
+  {
+    id: "b3",
+    title: "Medium Burger",
+    category: "Burgers",
+    price: 5,
+    description: "A regular burger",
+    image:
+      "https://images.unsplash.com/photo-1553979459-d2229ba7433b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2136&q=80",
+  },
+  {
+    id: "b3",
+    title: "Medium Burger",
+    category: "Burgers",
+    price: 5,
+    description: "A regular burger",
+    image:
+      "https://images.unsplash.com/photo-1553979459-d2229ba7433b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2136&q=80",
+  },
+  {
     id: "b4",
     title: "Black Burger",
     category: "Burgers",
@@ -40,6 +85,60 @@ const DUMMY_ITEMS = [
     description: "A very dark burger",
     image:
       "https://images.unsplash.com/photo-1582196016295-f8c8bd4b3a99?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3000&q=80",
+  },
+  {
+    id: "s1",
+    title: "French Fires",
+    category: "Sides",
+    price: 3.5,
+    description: "Perfectly crispy fries",
+    image:
+      "https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1925&q=80",
+  },
+  {
+    id: "s1",
+    title: "French Fires",
+    category: "Sides",
+    price: 3.5,
+    description: "Perfectly crispy fries",
+    image:
+      "https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1925&q=80",
+  },
+  {
+    id: "s1",
+    title: "French Fires",
+    category: "Sides",
+    price: 3.5,
+    description: "Perfectly crispy fries",
+    image:
+      "https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1925&q=80",
+  },
+  {
+    id: "s1",
+    title: "French Fires",
+    category: "Sides",
+    price: 3.5,
+    description: "Perfectly crispy fries",
+    image:
+      "https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1925&q=80",
+  },
+  {
+    id: "s1",
+    title: "French Fires",
+    category: "Sides",
+    price: 3.5,
+    description: "Perfectly crispy fries",
+    image:
+      "https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1925&q=80",
+  },
+  {
+    id: "s1",
+    title: "French Fires",
+    category: "Sides",
+    price: 3.5,
+    description: "Perfectly crispy fries",
+    image:
+      "https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1925&q=80",
   },
   {
     id: "s1",
@@ -60,6 +159,60 @@ const DUMMY_ITEMS = [
       "https://images.unsplash.com/photo-1631206616601-79af875341d4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1925&q=80",
   },
   {
+    id: "d1",
+    title: "Strawberry Cheesecake",
+    category: "Desserts",
+    price: 5,
+    description: "Amazingly sweet and delicious",
+    image:
+      "https://images.unsplash.com/photo-1631206616601-79af875341d4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1925&q=80",
+  },
+  {
+    id: "d1",
+    title: "Strawberry Cheesecake",
+    category: "Desserts",
+    price: 5,
+    description: "Amazingly sweet and delicious",
+    image:
+      "https://images.unsplash.com/photo-1631206616601-79af875341d4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1925&q=80",
+  },
+  {
+    id: "d1",
+    title: "Strawberry Cheesecake",
+    category: "Desserts",
+    price: 5,
+    description: "Amazingly sweet and delicious",
+    image:
+      "https://images.unsplash.com/photo-1631206616601-79af875341d4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1925&q=80",
+  },
+  {
+    id: "d1",
+    title: "Strawberry Cheesecake",
+    category: "Desserts",
+    price: 5,
+    description: "Amazingly sweet and delicious",
+    image:
+      "https://images.unsplash.com/photo-1631206616601-79af875341d4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1925&q=80",
+  },
+  {
+    id: "d1",
+    title: "Strawberry Cheesecake",
+    category: "Desserts",
+    price: 5,
+    description: "Amazingly sweet and delicious",
+    image:
+      "https://images.unsplash.com/photo-1631206616601-79af875341d4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1925&q=80",
+  },
+  {
+    id: "d1",
+    title: "Strawberry Cheesecake",
+    category: "Desserts",
+    price: 5,
+    description: "Amazingly sweet and delicious",
+    image:
+      "https://images.unsplash.com/photo-1631206616601-79af875341d4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1925&q=80",
+  },
+  {
     id: "dr1",
     title: "Coca Cola",
     category: "Drinks",
@@ -67,6 +220,87 @@ const DUMMY_ITEMS = [
     description: "The classic",
     image:
       "https://images.unsplash.com/photo-1561758033-48d52648ae8b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80",
+  },
+  {
+    id: "dr1",
+    title: "Coca Cola",
+    category: "Drinks",
+    price: 1,
+    description: "The classic",
+    image:
+      "https://images.unsplash.com/photo-1561758033-48d52648ae8b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80",
+  },
+  {
+    id: "dr1",
+    title: "Coca Cola",
+    category: "Drinks",
+    price: 1,
+    description: "The classic",
+    image:
+      "https://images.unsplash.com/photo-1561758033-48d52648ae8b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80",
+  },
+  {
+    id: "dr1",
+    title: "Coca Cola",
+    category: "Drinks",
+    price: 1,
+    description: "The classic",
+    image:
+      "https://images.unsplash.com/photo-1561758033-48d52648ae8b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80",
+  },
+  {
+    id: "dr1",
+    title: "Coca Cola",
+    category: "Drinks",
+    price: 1,
+    description: "The classic",
+    image:
+      "https://images.unsplash.com/photo-1561758033-48d52648ae8b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80",
+  },
+  {
+    id: "sp1",
+    title: "Ahi Tuna",
+    category: "Specials",
+    price: 10.5,
+    description: "Seared to perfection",
+    image:
+      "https://images.unsplash.com/photo-1626056087728-05c3d180911a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1001&q=80",
+  },
+  {
+    id: "sp1",
+    title: "Ahi Tuna",
+    category: "Specials",
+    price: 10.5,
+    description: "Seared to perfection",
+    image:
+      "https://images.unsplash.com/photo-1626056087728-05c3d180911a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1001&q=80",
+  },
+  {
+    id: "sp1",
+    title: "Ahi Tuna",
+    category: "Specials",
+    price: 10.5,
+    description: "Seared to perfection",
+    image:
+      "https://images.unsplash.com/photo-1626056087728-05c3d180911a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1001&q=80",
+  },
+  {
+    id: "sp1",
+    title: "Ahi Tuna",
+    category: "Specials",
+    price: 10.5,
+    description: "Seared to perfection",
+    image:
+      "https://images.unsplash.com/photo-1626056087728-05c3d180911a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1001&q=80",
+  },
+  {
+    id: "sp1",
+    title: "Ahi Tuna",
+    category: "Specials",
+    price: 10.5,
+    description: "Seared to perfection",
+    image:
+      "https://images.unsplash.com/photo-1626056087728-05c3d180911a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1001&q=80",
   },
   {
     id: "sp1",
@@ -209,7 +443,7 @@ const FoodItems = (props) => {
                     {DUMMY_ITEMS.map(
                       (item) =>
                         item.category === "Specials" && (
-                          <MenuItems
+                          <MenuItems 
                             id={item.id}
                             title={item.title}
                             price={item.price}
